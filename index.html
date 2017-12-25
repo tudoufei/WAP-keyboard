@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<title>输入密码</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<script src="js/adaptive.js"></script>
+<script src="js/inputPWD.js"></script>
+<script>
+	window['adaptive'].desinWidth = 640;
+	window['adaptive'].baseFont = 24;
+	window['adaptive'].scaleType = 1; // 1为默认值，可以不用设置
+	window['adaptive'].init();
+</script>
+</head>
+<body>
+<div class="blackbox" style="display:block"></div>
+<div class="pwd_tan">
+  <div class="pwd_tan_tit">输入交易密码<div class="pwd_cancel"><a href="#">×</a></div></div>
+ <div class="input_pwd">
+ 	请输入您的交易密码
+ </div>
+<div class="wrap">
+    <div class="inputBoxContainer" id="inputBoxContainer">
+        <input type="text" class="realInput" id="pwdNum" autofocus/>
+        <div class="bogusInput" id="showNum">
+            <input type="password" maxlength="6" disabled/>
+            <input type="password" maxlength="6" disabled/>
+            <input type="password" maxlength="6" disabled/>
+            <input type="password" maxlength="6" disabled/>
+            <input type="password" maxlength="6" disabled/>
+            <input type="password" maxlength="6" disabled/>
+        </div>
+    </div>
+</div>
+ <div class="forget_pwd"><a href="#">忘记交易密码？</a></div>
+<div class="keybord_box" id="inputPwd">
+    <div class="keybord clr">
+        <a class="keybord_num" href="javascript:void(0)">1</a>
+        <a class="keybord_num" href="javascript:void(0)">2</a>
+        <a class="keybord_num" href="javascript:void(0)">3</a>
+    </div>
+    <div class="keybord clr">
+        <a class="keybord_num" href="javascript:void(0)">4</a>
+        <a class="keybord_num" href="javascript:void(0)">5</a>
+        <a class="keybord_num" href="javascript:void(0)">6</a>
+    </div>
+    <div class="keybord clr">
+        <a class="keybord_num" href="javascript:void(0)">7</a>
+        <a class="keybord_num" href="javascript:void(0)">8</a>
+        <a class="keybord_num" href="javascript:void(0)">9</a>
+    </div>
+    <div class="keybord clr">
+        <a class="keybord_num bg_de" href="javascript:void(0)">清空</a>
+        <a class="keybord_num" href="javascript:void(0)">0</a>
+        <a class="keybord_num bg_de" href="javascript:void(0)">删除</a>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
